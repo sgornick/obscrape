@@ -1,0 +1,22 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# virtualenv.
+# Ignore as this is populated when doing $ pip3 install -r deply/requirements.txt.
+venv/
+ENV/
+
+# Bak.
+# Exists on dev systems only.
+bak/
+
+# Data output
+data/*.json
+
+# Ply copies of scripts to current directory or to module directory. Ignore.
+/lextab.py
+/yacctab.py
+/js2xml/lextab.py
+/js2xml/yacctab.py
