@@ -23,7 +23,7 @@ To scrape the data from the e-commerce site:
 
 ``` sh
 
-$ scrapy crawl lvrcrawler -o data/items.json
+$ scrapy crawl lvr-crawler -o data/items.json
 
 ```
 
