@@ -52,7 +52,7 @@ for row in data:
             data={
                 'title': row['title'],
                 'description':
-                    '<pre>'
+                    u'<pre>'
                     '**   NOTE - THIS IS JUST A TEST OF OPEN BAZAAR.  **<br />'
                     '** NO ITEMS IN THIS STORE ARE ACTUALLY FOR SALE. **<br />'
                     '</pre>{}<pre>'
