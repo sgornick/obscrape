@@ -45,8 +45,7 @@ for row in data:
         # Store the file on OB.
         img_hashes.append(upload_image(photo_url))
 
-    response = \
-        requests.post(
+    r = requests.post(
             u'{}{}contracts'.format(OB_HOST, OB_API_PREFIX),
             cookies={SESSION_COOKIE_NAME: session_cookie},
             data={
@@ -89,3 +88,7 @@ for row in data:
                     'NOTE - THIS IS JUST A TEST OF OPEN BAZAAR.\r\n'
                     'NO ITEMS IN THIS STORE ARE ACTUALLY FOR SALE.',
             })
+
+    assert r.status_code == 200
+    assert 'success' in r.json()
+    assert r.json()['success']
