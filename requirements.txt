@@ -1,6 +1,6 @@
 attrs==16.0.0
 cffi==1.6.0
-cryptography==1.4
+cryptography==3.2
 cssselect==0.9.1
 enum34==1.1.6
 extruct==0.1.0
